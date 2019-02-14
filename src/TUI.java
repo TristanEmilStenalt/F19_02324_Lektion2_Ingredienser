@@ -100,7 +100,7 @@ public class TUI implements IUI {
 
     //lader brugeren indtaste værdier til en ny ingrediens
     @Override
-    public void createIngredient() {
+    public void createIngredient() { //Skal ikke kunne lave ingrediens med allerede eksisterende ID.
         System.out.println("Enter ID, Name, & Amount of new ingredient");
         System.out.print("ID: ");
         int id = scan.nextInt();
